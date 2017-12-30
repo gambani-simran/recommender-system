@@ -1,0 +1,42 @@
+<style type="text/css">
+#addQuestion{
+    background-color: #C5C9B8;
+    width: 100%;
+    color: #333333;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    float: none;
+    padding-top: 30px;
+}	
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>View Song Recommender</title>
+</head>
+<body>
+<div class="container">
+<div class="jumbotron">
+<h1>SONG RECOMMENDER</h1>
+<div id="addQuestion">
+    <div class="col-sm-10 form-group-lg">
+        <form action = "http://localhost:5000/seeResult" method = "post" class="form-group">
+            <p>Enter ID of user to get recommendations:</p>
+         	<p><input type = "number" name = "num" /></p>
+         	<input class="btn btn-outline-success" id="saveTestBtn" type="submit"  value = "Submit ID" >
+        </form>
+                   
+        
+    </div>
+</div>  
+</div>
+</div>    
+</body>
+</html>
